@@ -44,6 +44,13 @@ main{
   width: 100%;
   height: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.pattern{
+  max-width: 900px;
 }
 
 .img-wrapper{
@@ -58,3 +65,14 @@ main{
 .hero-text{
   /* max-width: 1000px; */
 }
+
+.search-input{
+  background-image: url(../public/search.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 3%;
+  padding: 12px 20px 12px 45px;
+  outline: none !important; 
+  
+}
+

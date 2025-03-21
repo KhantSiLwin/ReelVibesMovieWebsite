@@ -1,13 +1,14 @@
-import React from "react"
+import React, { useState } from "react"
 import './App.css'
 import Search from "./components/Search"
 
 
-function App() {
 
 
+const App = () => {
+  const [searchTerm,setSearchTerm] = useState('');
   return (
-      <main>
+    <main>
         <div className="pattern">
             <div className="wrapper">
                 <header className="text-center flex flex-col justify-center align-middle">
@@ -17,8 +18,8 @@ function App() {
                   <h2 className=" mt-2.5 text-6xl font-bold hero-text">Find <span className='text-gradient'>Movies</span> Your'll Enjoy Without the Hassle</h2>
                 </header>
 
-                <Search/>
-
+                <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+                <h1 className="text-white"> {searchTerm}</h1>
             </div>
         </div>
       </main>
